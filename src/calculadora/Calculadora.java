@@ -49,6 +49,18 @@ public class Calculadora {
    return n1/n2;
 }
  
+    public static int calcularModulo(int dividendo, int divisor) {
+        // Asegurarse de que el divisor no sea cero
+        if (divisor == 0) {
+            throw new ArithmeticException("No se puede dividir por cero");
+        }
+        
+        // Calcular el módulo utilizando el operador % (módulo)
+        int modulo = dividendo % divisor;
+        
+        return modulo;
+    }
+ 
  //Getters y Setters
 
     public String getMarca() {
